@@ -16,7 +16,7 @@
     html {
       scroll-behavior: smooth;
     }
-    
+
     body {
       font-family: "Segoe UI", sans-serif;
       margin: 0;
@@ -455,7 +455,7 @@
   const infoHari = document.getElementById('info-hari');
 
   if (jadwalHariIni.length > 0) {
-    infoHari.innerText = Jadwal praktik untuk hari ${hariIni}:;
+    infoHari.innerText = `Jadwal praktik untuk hari ${hariIni}:`;
     jadwalHariIni.forEach(item => {
       const tr = document.createElement('tr');
       tr.innerHTML = `
@@ -467,7 +467,7 @@
       tbody.appendChild(tr);
     });
   } else {
-    infoHari.innerText = Tidak ada jadwal praktik untuk hari ${hariIni}.;
+    infoHari.innerText = `Tidak ada jadwal praktik untuk hari ${hariIni}.`;
   }
 </script>
  <!-- Dokter -->
